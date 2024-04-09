@@ -43,43 +43,52 @@ class HomePage extends StatelessWidget {
                 ),
               ),
 
-              Container(
+              Material(
+                elevation: 20.0,
+                shadowColor: Colors.black,
+                child: Container(
+                  width: 400,
+                  height: 50,
+                  margin: EdgeInsets.only(top: 100, left: 50, right: 50),
+                  child: TextField(
+
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.account_circle_outlined),
+                      filled: true,
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide.none,
+                        borderRadius: BorderRadius.circular(50)
+                      )
+                    ),
+
+                  ),
+                ),
+              ),
+
+             Material(
+               elevation: 20.0,
+               shadowColor: Colors.black,
+               child: Container(
                 width: 400,
-                height: 50,
-                margin: EdgeInsets.only(top: 100, left: 50, right: 50),
+                  height: 50,
+                margin: EdgeInsets.only(top: 8, left: 50, right: 50, bottom: 30),
                 child: TextField(
 
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.account_circle_outlined),
-                    filled: true,
-                    border: OutlineInputBorder(
-                      borderSide: BorderSide.none,
-                      borderRadius: BorderRadius.circular(50)
-                    )
+
+                      prefixIcon: Icon(Icons.lock_outlined),
+                      filled: true,
+                      border: OutlineInputBorder(
+                          borderSide: BorderSide.none,
+                          borderRadius: BorderRadius.circular(50)
+                      )
+
                   ),
 
                 ),
-              ),
-
-             Container(
-              width: 400,
-                height: 50,
-              margin: EdgeInsets.only(top: 8, left: 50, right: 50, bottom: 30),
-              child: TextField(
-
-                decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.lock_outlined),
-                    filled: true,
-                    border: OutlineInputBorder(
-                        borderSide: BorderSide.none,
-                        borderRadius: BorderRadius.circular(50)
-                    )
-
-                ),
-
-              ),
 
 
+               ),
              ),
              Container(
                 width: 400,
