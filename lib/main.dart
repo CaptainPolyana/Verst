@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
 
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(image: NetworkImage("https://i.pinimg.com/originals/fa/94/42/fa94422b6375b264f4450551562b56d8.jpg"), fit: BoxFit.cover),
+          image: DecorationImage(image: NetworkImage("https://goodhub.fun/wp-content/uploads/2023/01/i-35-35-1536x1004.jpeg"), fit: BoxFit.cover),
 
         ),
         child: Column(
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
                 child: Container(
                   width: 400,
                   height: 50,
-                  margin: EdgeInsets.only(top: 100, left: 50, right: 50),
+                  margin: EdgeInsets.only(top: 100, left: 50, right: 50,),
                   child: TextField(
 
                     decoration: InputDecoration(
@@ -71,12 +71,13 @@ class HomePage extends StatelessWidget {
                child: Container(
                 width: 400,
                   height: 50,
-                margin: EdgeInsets.only(top: 8, left: 50, right: 50, bottom: 30),
+                margin: EdgeInsets.only(top: 20, left: 50, right: 50,),
                 child: TextField(
 
                   decoration: InputDecoration(
 
                       prefixIcon: Icon(Icons.lock_outlined),
+                      suffixIcon: Icon(Icons.help_outline),
                       filled: true,
                       border: OutlineInputBorder(
                           borderSide: BorderSide.none,
@@ -93,7 +94,7 @@ class HomePage extends StatelessWidget {
              Container(
                 width: 400,
 
-                  margin: EdgeInsets.only( left: 50, right: 50),
+                  margin: EdgeInsets.only(top: 20, left: 50, right: 50),
                   child: ElevatedButton(
                       onPressed: (){},
                       child: Text("Login")
